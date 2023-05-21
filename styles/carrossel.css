@@ -1,0 +1,25 @@
+.carrossel__titulo {
+    text-align: center;
+    background-color: var(--branco);
+    padding: 1em;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    text-transform: uppercase;
+    color: var(--laranja);
+}
+
+.swiper-slide img{ /* esse corre aqui é para configurar o taamnho da imagem, nesse caso ela ocupa 100% do seu espaço dentro do carrossel */
+     width: 100%;
+}
+
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+}

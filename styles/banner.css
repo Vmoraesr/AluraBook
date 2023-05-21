@@ -1,0 +1,46 @@
+
+.banner {
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 3em 2em;
+    font-family: var(--fonte-principal);
+    
+    }
+    
+    .banner__titulo {
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--branco);
+        
+    }
+    
+    .banner__texto {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--branco);
+        margin: 1em 0;
+       
+    }
+    
+    .banner__pesquisa {
+        font-size: 14;
+        font-weight: 400;
+        color: var(--branco);
+        background-color: transparent ;
+        border: solid 1px;
+        border-radius: 24px;
+        text-align: center;
+        padding: 1em;
+        width: 100%;
+
+    }
+
+    .banner__pesquisa::placeholder {
+        font-family: var(--fonte-principal);
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        color:#ffffff;
+        background: url(./Vector.svg) no-repeat;
+        background-position: 2em
+    }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/banner.css">
+    <link rel="stylesheet" href="./styles.css">
+
+
+    <title>loja</title>
+</head>
+
+<body>
+    <header class="cabecalho__geral">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu">
+                    <span class="cabecalho__menu-hamburguer container__img">  </span>
+                </label>
+                    <ul class="lista-menu">
+                        <li class="lista-menu__titulo">Categorias</li>
+
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-End</a></li>
+
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Busisnes</a></li>
+
+                        <li class="lista-menu__item"><a href="#" class="lista-menu__link">Design e UX</a></li>
+
+                    </ul>
+                <img src="./imagens/Logo.svg" alt="logo" class="container__img">
+            
+        </div>
+
+        <div class="container">
+            <a href="#"><img src="./imagens/Favoritos.svg" alt="favoritos" class="container__img"></a>
+            <a href="#"><img src="./imagens/Compras.svg" alt="carro de Compras" class="container__img"></a>
+            <a href="#"><img src="./imagens/Usuario.svg" alt="perfil" class="container__img"></a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+
+    <section class="carrossel">
+            <h2 class="carrossel__titulo">Últimos Lançamentos </h2>
+            <div class="swiper">
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- esse rolê todo aqui para adicionar um carrossel de livros -->
+                <div class="swiper-wrapper">
+                  <!-- imagens -->
+                  <div class="swiper-slide"><img src="./imagens/livros/Nodejs.svg" alt="Nodejs"></div>
+                  <div class="swiper-slide"><img src="./imagens/livros/Portugol.svg" alt="Portugol"></div>
+                  <div class="swiper-slide"><img src="./imagens/livros/ApacheKafka.svg" alt="ApacheKafka"></div>
+                  <div class="swiper-slide"><img src="./imagens/livros/Javascript.svg" alt="Javascript"></div>
+                  <div class="swiper-slide"><img src="./imagens/livros/Arquitetura.svg" alt="Arquitetura"></div>
+                  <div class="swiper-slide"><img src="./imagens/livros/ApacheKafka.svg" alt="ApacheKafka"></div>
+                  <div class="swiper-slide"><img src="./imagens/livros/Tuning.svg" alt="Tuning"></div>
+                </div>
+                
+              
+                <!-- para adicionar as setas para mudança de imagem  no carrossel 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>-->
+              
+                <!-- uma barrinha feia que vem padrao 
+                <div class="swiper-scrollbar"></div>
+              </div>-->
+
+            <div class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <h3 class="">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img src="./imagens/angular.svg" alt="angular" class="descricao__imagem">
+                </div>
+            </div>
+    </section >
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        pagination: { /* esse daqui é as bolinhas que indica qual pagina do carrossel esta sendo exibida */
+            el: '.swiper-pagination',
+    type: 'bullets', }
+    });
+    /* esse corre aqui de cima é para configurar espaçamento e quantidade de imagens por vez na tela de rolagenm  */
+
+    </script>
+</body>
+</html>
